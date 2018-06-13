@@ -1,1 +1,0 @@
-// .head_mnu scripts goes here

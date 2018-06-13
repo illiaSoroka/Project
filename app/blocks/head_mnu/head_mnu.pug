@@ -1,3 +1,24 @@
 mixin head_mnu()
 	.head_mnu
-		| head_mnu
+		.mnu
+			.logo 
+				<a href="#"> Digital Pro</a>
+			.main_mnu
+				ul
+					li <a href="#">Author</a>
+					li <a href="#">Journal</a>
+						ul.journal_mnu
+							li <a href="#">Content / Sidebar</a>
+								ul.item_mnu
+									li <a href="#">Menu Item</a>
+									li <a href="#">Menu Item</a>
+							li <a href="#">Sidebar / Content</a>
+							li <a href="#">Full-Width Content</a>
+					li <a href="#">Typography</a>
+					li <a href="#">Shop</a>
+						ul.shop_mnu
+							li <a href="#">Product</a>
+							li <a href="#">My Account</a>
+							li <a href="#">Cart</a>
+							li <a href="#">Checkout</a>
+					li <a href="#">Contact</a>

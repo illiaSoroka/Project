@@ -6,3 +6,68 @@
 	width: 100%
 	background-color: #fff
 
+.mnu
+	top: 0
+	margin-top: 2px
+	position: relative
+	line-height: 1
+	display: flex
+	justify-content: space-between
+
+	border-bottom: 1px solid transparent
+.logo
+	margin-top: 7px
+
+	a, a:hover, a:active, a:focus
+		border: none
+		font-size: 2rem
+		font-weight: 700
+		text-transform: uppercase
+		color: #232525
+
+.main_mnu 
+	position: relative
+	font-size: 1.2rem
+	font-weight: 600
+	text-transform: uppercase
+	ul
+		margin: 0
+		li
+			display: inline-block
+			&:hover
+				ul
+					display: block
+			a
+				display: block
+				letter-spacing: 0.5px
+				font-size: 1.2rem
+				font-weight: 600
+				padding: 10px
+				border: none
+
+	.journal_mnu, .shop_mnu, .item_mnu
+		padding: 0
+		display: none
+		position: absolute
+		background-color: #fff
+		width: 180px
+		a
+			padding: 15px
+			display: block
+			position: relative
+			text-align: left
+			width: 180px
+			border: 1px solid #eee
+
+.journal_mnu
+	li
+		&:hover
+			ul
+				li
+					display: block
+	.item_mnu
+		top: 0
+		right: -180px
+		li
+			display: none
+	
