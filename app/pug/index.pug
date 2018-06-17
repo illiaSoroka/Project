@@ -2,6 +2,10 @@ extends main.pug
 
 include ../blocks/head_mnu/head_mnu.pug
 include ../blocks/header/header.pug
+include ../blocks/free_access/free_access.pug
+include ../blocks/our_service/our_service.pug
+include ../blocks/our_journal/our_journal.pug
+include ../blocks/about_us/about_us.pug
 include ../blocks/footer/footer.pug
 
 block title
@@ -9,9 +13,17 @@ block title
 
 block pagecontent
 
-	+head_mnu
+	+head_mnu()
 
 	+header()
+
+	+free_access()
+
+	+our_service()
+
+	+our_journal()
+
+	+about_us()
 
 	+footer()
 

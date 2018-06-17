@@ -11,10 +11,27 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.main_mnu
+		display: none
+	.toggleMenu
+		display: block
+
+	.mnu
+		display: flex
+		justify-content: center
+		button
+			border: none
+			.toggleMenu
+				color: #232525
+		label
+			text-transform: uppercase
+			display: block
+			&:hover
+				color: $main-color
 
 // ≥576px
 +media-breakpoint-down(xs)
-
+	
 
 /*==========  Mobile First  ==========*/
 

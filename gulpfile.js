@@ -98,6 +98,7 @@ gulp.task('watch', ['styles', 'js', 'browser-sync', 'pug'], function() {
 	gulp.watch(["app/block/**/*.sass"], ["styles"]);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/pug/*.pug', ['pug']);
+	gulp.watch('app/block/**/*.pug', ['pug']);
 });
 
 gulp.task('default', ['watch']);
