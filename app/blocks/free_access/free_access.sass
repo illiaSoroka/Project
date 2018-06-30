@@ -32,21 +32,46 @@
 	padding: 21% 0
 
 .check_mark
+	ul
+		margin: 20px 0 20px 10px
+		padding: 0
 	li
 		position: relative
 		list-style-type: none
-		padding: 8px 0 8px 36px
+		padding: 5px 0 5px 36px
+		margin-left: -36px
 		letter-spacing: 0.5px
 		font-size: 1.4rem
 		font-weight: 600
 		text-transform: uppercase
-		&::before
-			content: '\e800'
-			font-family: "font_check"
-			font-weight: 4.8rem
-			color: $main-color
-			position: relative
-			display: inline-block
-			margin-left: -36px
-			width: 26px
+	.icon
+		font-size: 2.7rem
+		color: $main-color
+		position: relative
+		display: inline-block
+		width: 36px
+		vertical-align: middle
+	
+.form
+	position: relative
+	input
+		text-align: center
+		margin-bottom: 30px
+		padding: 20px
+		width: 100%
+		letter-spacing: 0.5px
+	.button
+		width: 100%
+		font-size: 1.6rem
+		padding: 20px
+		font-weight: 500
+		margin: 0
+		&:hover, &:focus
+			background-color: #000
+
+.p_wrap	
+	p
+		font-size: 1.43rem
+		line-height: 1.7
+		margin-top: 30px
 	
