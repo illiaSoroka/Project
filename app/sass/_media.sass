@@ -8,6 +8,26 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	.sect_2
+		.wraper
+
+	.service_wrap
+		display: flex
+		justify-content: center
+		.widget
+			padding-top: 30px
+			display: inlin-block
+			width: auto
+
+	.journ
+		flex-wrap: wrap
+		flex-direction: column-reverse
+		.journal
+			margin-top: 60px
+		.img_wrap
+
+			margin: 0
+
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -31,7 +51,12 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
-	
+	.journ
+		.img_wrap
+			width: auto
+			.img_w
+				width: 100%
+				height: auto
 
 /*==========  Mobile First  ==========*/
 
