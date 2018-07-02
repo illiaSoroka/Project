@@ -9,25 +9,39 @@
 // ≥992px
 +media-breakpoint-down(md)
 	.sect_2
+		display: flex
+		justify-content: center
+
 		.wraper
+			border: none
+			width: auto
+			display: inlin-block
+		.widget_wrap
+			padding: 0% 0% 
+			margin-top: 120px
 
 	.service_wrap
 		display: flex
 		justify-content: center
+		flex-wrap: wrap
 		.widget
 			padding-top: 30px
 			display: inlin-block
 			width: auto
+
 
 	.journ
 		flex-wrap: wrap
 		flex-direction: column-reverse
 		.journal
 			margin-top: 60px
-		.img_wrap
-
-			margin: 0
-
+	.img_wrap
+		display: block
+		max-wight: 100%
+		margin: 0
+		.img_w
+			width: 100%
+			height: auto
 
 // ≥768px
 +media-breakpoint-down(sm)
