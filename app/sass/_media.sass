@@ -45,23 +45,39 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
 	.main_mnu
 		display: none
 	.toggleMenu
 		display: block
-
+		text-align: center
+			color: #232525
 	.mnu
-		display: flex
-		justify-content: center
-		button
+		display: block
+		text-align: center
+		input
+			display: block
 			border: none
-			.toggleMenu
-				color: #232525
+			
+				
 		label
+			&:hover, &:focus, &:active
+				color: $main-color
+			text-align: center
 			text-transform: uppercase
 			display: block
-			&:hover
-				color: $main-color
+			font-weight: 500
+			
+			.icon
+				font-size: 1.9rem
+				margin-right: 4px
+				vertical-align: middle
+		ul
+			display: block
+	
+	.content
+		h1
+			font-size: 6rem
 
 	.us
 		width: 100%
@@ -70,6 +86,9 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.content
+		h1
+			font-size: 3.6rem
 	.journ
 		.img_wrap
 			width: auto
