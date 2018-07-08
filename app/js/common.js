@@ -1,10 +1,9 @@
 $(document).ready(function() {
 
-	$(".toggle-mnu").click(function() {
+	$(".toggleMenu").click(function() {
 		$(this).toggleClass("on");
-		$(".main-mnu").slideToggle();
+		$(".main_mnu").slideToggle();
 	});
-
 
 
 

@@ -8,10 +8,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	//free_access
 	.sect_2
 		display: flex
 		justify-content: center
-
+		.email
+			margin-bottom: 120px
 		.wraper
 			border: none
 			width: auto
@@ -29,7 +31,7 @@
 			display: inlin-block
 			width: auto
 
-
+	//our_journal
 	.journ
 		flex-wrap: wrap
 		flex-direction: column-reverse
@@ -45,40 +47,59 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
-
-	.main_mnu
-		display: none
-	.toggleMenu
-		display: block
-		text-align: center
-			color: #232525
+	//head_mnu
+	.head_mnu
+		position: inherit
 	.mnu
 		display: block
 		text-align: center
-		input
-			display: block
-			border: none
-			
-				
-		label
-			&:hover, &:focus, &:active
-				color: $main-color
-			text-align: center
-			text-transform: uppercase
-			display: block
-			font-weight: 500
-			
-			.icon
-				font-size: 1.9rem
-				margin-right: 4px
-				vertical-align: middle
+	.toggleMenu
+		display: block
+		border: none
+		&:hover, &:focus, &:active
+			border: 1px solid #eee
+	.main_mnu
+		position: relative
+		display: none
 		ul
-			display: block
-	
+			li
+				display: block
+				text-align: left
+				&:hover
+					&:before
+						content: ''
+				a
+					
+					padding: 16px 0 16px 10px
+					margin-bottom: 1px
+				
+		.journal_mnu, .shop_mnu, .item_mnu
+			position: relative
+			left: 0
+			padding-left: 15px
+			a
+				
+				margin-bottom: 1px
+				border: none
+
+		.journal_mnu
+			border: none
+			.item_mnu
+				position: relative
+				padding-left: 15px
+				
+
+				border: none
+		
+
+
+	//header
+	.main-head
+		margin-top: 0
 	.content
 		h1
 			font-size: 6rem
-
+	//footer_widgets
 	.us
 		width: 100%
 		text-align: left
@@ -86,9 +107,11 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+	//header
 	.content
 		h1
 			font-size: 3.6rem
+	//our_journal
 	.journ
 		.img_wrap
 			width: auto
@@ -103,6 +126,10 @@
 
 // ≤768px
 +media-breakpoint-up(md)
+	.main_mnu
+		display: block!important
+	.toggleMenu
+		display: none
 
 // ≤992px
 +media-breakpoint-up(lg)
