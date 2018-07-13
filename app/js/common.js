@@ -5,7 +5,7 @@ $(document).ready(function() {
 		$(".main_mnu").slideToggle();
 	});
 
-
+	$(".content, .sect_2, .sect_3, .sect_4").animated("fadeInUp");
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

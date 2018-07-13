@@ -61,24 +61,23 @@
 	.main_mnu
 		position: relative
 		display: none
+		
 		ul
 			li
+				width: 100%
 				display: block
 				text-align: left
-				&:hover
-					&:before
-						content: ''
 				a
-					
 					padding: 16px 0 16px 10px
 					margin-bottom: 1px
-				
+						
 		.journal_mnu, .shop_mnu, .item_mnu
 			position: relative
 			left: 0
 			padding-left: 15px
+			width: 100%
 			a
-				
+				width: 100%
 				margin-bottom: 1px
 				border: none
 
@@ -87,11 +86,20 @@
 			.item_mnu
 				position: relative
 				padding-left: 15px
-				
-
 				border: none
-		
 
+		.sab_icon
+			&:hover, &:active, &:focus
+				&:after
+					transform: rotate(180deg)
+			&:after
+				display: block
+				float: right
+
+				&:hover
+					transform: rotate(180deg)
+
+		
 
 	//header
 	.main-head
@@ -104,6 +112,7 @@
 		width: 100%
 		text-align: left
 		padding: 90px 4%
+
 
 // ≥576px
 +media-breakpoint-down(xs)

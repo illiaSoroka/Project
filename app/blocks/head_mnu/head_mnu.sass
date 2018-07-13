@@ -31,11 +31,14 @@
 	font-size: 1.2rem
 	font-weight: 600
 	text-transform: uppercase
+	
+		
 	ul
 		margin: 0
 	li
 		display: inline-block
 		&:hover
+			transition: all 20s ease
 			ul
 				display: block
 		a
@@ -45,9 +48,12 @@
 			font-weight: 600
 			padding: 10px
 			border: none
-			transition: all .2s ease
+			
+			button
+				display: none
 
 	.journal_mnu, .shop_mnu, .item_mnu
+		transition: all .2s ease-in-out
 		padding: 0
 		display: none
 		position: absolute
@@ -60,6 +66,13 @@
 			text-align: left
 			width: 180px
 			border: 1px solid #eee
+	.sab_icon
+		
+		&:after
+			content: "\f107"
+			font-family: "lock"
+			display: none
+			font-size: 1.4rem
 
 .journal_mnu
 	li
@@ -72,6 +85,8 @@
 		right: -180px
 		li
 			display: none
+
+
 
 .toggleMenu
 	height: 48px
